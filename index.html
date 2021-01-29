@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link href="styles.css" rel="stylesheet" />
+    <script src="cadastro.js" defer></script>
+</head>
+<body>
+    <header>
+        <form action="">
+            <div class="container">
+                <h1>Cadastro</h1>
+                <h3>Preencha os campos para realizar o cadastro</h3>
+            </div>
+
+            <fieldset class="fild-register">
+                <div class="fild-register-right">
+                    <label>Nome completo:</label>
+                    <input id="nome" class="input-text" type="text" maxlength="50" required>
+                    <br><br>
+                    <label>Usuario:</label>
+                    <input id="user" class="input-text" type="text" maxlength="50" required>
+                    <br><br>
+                    <label>Senha:</label>
+                    <input id="pass" class="input-text" type="password" maxlength="50" required>
+                    <br><br>
+                    <label>Email:</label>
+                    <input id="email" class="input-text" type="email" maxlength="50" required>
+                    <br><br><br>
+                </div>
+                <div class="fild-register">
+                    <button type="reset" onclick="limparReg()"><span>Excluir</span></button>
+                    <button type="submit" onclick="validar()"><span>Cadastrar</span></button>
+                    <br><br>
+                    <p class="fild-p">Chave</p>
+                    <textarea class="chave" id="chave" >açakjdioqwj9d1289di1j9diua8whdi1wndk</textarea>
+                    <p class="fild-p">Senha criptografada</p>
+                    <textarea class="crip" id="crip"></textarea>
+                    <p class="fild-p">Senha descriptografada</p>
+                    <textarea class="decrip" id="decrip"></textarea>
+                    <br><br>
+                    <button onclick="decripto()"><span>Descriptografar</span></button>
+                    <button onclick="cripto()"><span>Criptografar</span></button>
+                </div>
+            </fieldset>
+        </form>
+    </header>>
+    <footer class="footer-rodape">
+        <p class="footer-p">Tela simples de cadastro - by <a href="https://github.com/CoelhoZz">Thyago</a></p>
+    </footer>
+</body>
+</html>
